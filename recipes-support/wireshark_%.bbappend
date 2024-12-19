@@ -1,2 +1,0 @@
-
-EXTRA_OECMAKE +="-DUSE_Qt6=OFF"
