@@ -17,6 +17,7 @@ SRC_URI += " file://venom-weston.ini \
 WESTONPASSWD = "\$5\$p3uoV5VM5xZdWbJa\$Ste1aJDRFxUpmT7CYbte/ZXo3kqTouuQc5yBrf09Rq1"
 
 USERADD_PARAM:${PN} = "--home /home/weston --shell /bin/sh --user-group -G video,input,render,wayland -p '${WESTONPASSWD}' weston"
+# USERADD_PARAM:${PN} = "--home /home/weston --shell /bin/sh --user-group -G video,input,render,wayland -p '${WESTONPASSWD}' root"
 
 do_install:append(){
     install -m 0755 -d ${D}${sysconfdir}/vnc/keys/
