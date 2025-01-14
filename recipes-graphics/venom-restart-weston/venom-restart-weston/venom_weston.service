@@ -1,0 +1,11 @@
+[Unit]
+Description=Venom_Weston
+# Before=network.target
+After=weston.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/venom_weston_restart.sh
+
+[Install]
+WantedBy=graphical.target
