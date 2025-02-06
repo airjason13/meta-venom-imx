@@ -57,6 +57,7 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     packagegroup-fsl-gstreamer1.0-full \
     packagegroup-venom-qt5 \
     packagegroup-venom-fonts \
+    packagegroup-venom-python3-extend \
     packagegroup-fonts-truetype \
     firmwared \
     ${@bb.utils.contains('DISTRO_FEATURES', 'x11 wayland', 'weston-xwayland xterm', '', d)} \
@@ -70,5 +71,9 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     git \
     chromium-ozone-wayland \
     networkmanager \
+    swupdate \
+    swupdate-www \
+    libsdl \
+    libsdl-dev \
 "
 PACKAGE_EXCLUDE += "connman connman-client connman-tools"
